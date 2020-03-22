@@ -1,8 +1,12 @@
 package com.imooc.dianping.common;
 
+
+/**
+ * 通用返回结果
+ */
 public class CommonRes {
 
-    //表明读经请求的返回处理结果，"success"或"fail"
+    //表明对应请求的返回结果，"success"或"fail"
     private String status;
 
     //若status=success时，表明对应的返回的json类数据
@@ -18,7 +22,6 @@ public class CommonRes {
         CommonRes commonRes = new CommonRes();
         commonRes.setStatus(status);
         commonRes.setData(result);
-
         return commonRes;
     }
 

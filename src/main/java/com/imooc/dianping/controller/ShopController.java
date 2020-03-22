@@ -43,7 +43,17 @@ public class ShopController {
     }
 
 
-    //搜索服务V1.0
+    /**
+     * 搜索服务1.0版本
+     * @param longitude
+     * @param latitude
+     * @param keyword
+     * @param orderby
+     * @param categoryId
+     * @param tags
+     * @return
+     * @throws BusinessException
+     */
     @RequestMapping("/search")
     @ResponseBody
     public CommonRes search(@RequestParam(name="longitude")BigDecimal longitude,

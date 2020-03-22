@@ -2,10 +2,9 @@ package com.imooc.dianping.common;
 
 
 public class CommonError {
+
     //错误码
     private Integer errCode;
-
-
     //错误描述
     private String errMsg;
 
